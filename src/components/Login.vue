@@ -88,11 +88,22 @@ export default {
       	var errorCallback =  (response) => {
           console.log('服务器请求出错了')
       	}
-      	this.$http.jsonp('https://sug.so.360.cn/suggest',{
+      	this.$http.jsonp('http://localhost:8000/all/1/12',{
 	            params:{
-	                word:'a'
+
 	            }
-        	}).then(successCallback,errorCallback);
+        }).then(successCallback,errorCallback);
+        this.axios({
+          method:'post',
+          url:'https://sug.so.360.cn/suggest',
+          data:{
+            word:'a'
+          }
+        }).then(function (res) {
+          console.log(res);
+        }).catch(function (error) {
+          console.log(error);
+        })
 	},
 	getMD5(pass){
      	let md5 = crypto.createHash("md5");
