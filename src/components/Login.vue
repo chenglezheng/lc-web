@@ -82,28 +82,12 @@ export default {
   	userLogin(){
         let pass = this.getMD5(this.formObj.password.trim() + this.formObj.username);
         var successCallback =  (response) => {
-		    console.log('服务器请求成功了')
-		    console.log(response.data)
+		      console.log(response.data)
       	}
       	var errorCallback =  (response) => {
           console.log('服务器请求出错了')
       	}
-      	this.$http.jsonp('http://localhost:8000/all/1/12',{
-	            params:{
-
-	            }
-        }).then(successCallback,errorCallback);
-        this.axios({
-          method:'post',
-          url:'https://sug.so.360.cn/suggest',
-          data:{
-            word:'a'
-          }
-        }).then(function (res) {
-          console.log(res);
-        }).catch(function (error) {
-          console.log(error);
-        })
+        this.$http.get('http://127.0.0.1/lc/select?userId=5').then(successCallback,errorCallback);
 	},
 	getMD5(pass){
      	let md5 = crypto.createHash("md5");
