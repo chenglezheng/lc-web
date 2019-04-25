@@ -1,0 +1,22 @@
+.data-search-table{
+    margin-top: 18px;
+}
+/*表格的基础样式*/
+.tableCommonStyle{
+    overflow: auto;
+    margin: 0px auto;
+}
+/*分页的基础样式*/
+.pageCommonStyle{
+    text-align: right;
+    margin-right: 17px;
+}
+.pageCommonStyle input{
+    background-color: rgba(0,0,0,0)!important;
+    border-color: #d5f3ff!important;
+    color: $white!important;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-radius: 0px!important;
+}

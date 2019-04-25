@@ -1,0 +1,119 @@
+.data-search-condition{
+    /*margin-left: 25px;*/
+    margin-top: 18px;
+}
+.data-search-condition .el-form-item{
+    margin-left: 18px;
+    margin-bottom: 8px;
+}
+/*表单所有label字体颜色为统一色*/
+.data-search-condition .el-form-item__label{
+    color: $white;
+}
+/*表单左飘*/
+.data-search-condition .el-form-item{
+    float: left;
+}
+/*设置radio的样式*/
+.data-search-condition .el-radio__label {
+    font-size: 14px;
+    padding-left: 5px;
+    color: $white;
+}
+.data-search-condition .el-radio + .el-radio {
+    margin-left: 5px;
+}
+/*时间框样式*/
+.currentTime .el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 142px!important;
+}
+.currentTime .el-form-item__label{
+    /*margin-left: 22px!important;*/
+    width: 60px!important;
+}
+.currentTime .el-form-item__content{
+    margin-left: 60px!important;
+}
+.currentTime input{
+    background-color: rgba(0,0,0,0);
+    border-color: #d5f3ff;
+    color: $white;
+}
+/*时段框样式*/
+.timeInterval .el-form-item__label{
+    width: 60px!important;
+}
+.timeInterval .el-form-item__content {
+    margin-left: 60px !important;
+}
+.timeInterval input{
+    background-color: rgba(0,0,0,0)!important;
+    border-color: #d5f3ff!important;
+    color: $white!important;
+}
+.timeInterval .el-date-editor.el-input, .el-date-editor.el-input__inner {
+    width: 232px!important;
+    background-color: rgba(0,0,0,0)!important;
+    border-color: #d5f3ff!important;
+    color: $white!important;
+}
+.timeInterval .el-date-editor .el-range-separator{
+    color: $white!important;
+}
+/*主副表下拉框样式*/
+.meterTypecombobox .el-form-item__label{
+    /*margin-left: 85px!important;*/
+    width: 75px!important;
+}
+.meterTypecombobox .el-form-item__content{
+    margin-left: 75px!important;
+}
+.meterTypecombobox input{
+    width: 95px;
+}
+/*电量类型下拉框样式*/
+.pulseTypecombobox input{
+    width: 108px;
+}
+/*按钮样式*/
+.searchButtonStyle .el-form-item__content{
+    margin-left: 0px!important;
+}
+.searchButtonStyle .el-button{
+    background-color: $white;
+    border-color: $white;
+}
+.searchButtonStyle .el-button span{
+    color: black;
+}
+.buttonDivStyle{
+    float: left;
+    width: 46px;
+    height: 30px;
+    border: 1px solid $white;
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-left: 18px;
+}
+.buttonDivStyle .el-button--mini{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    margin-top: 3px!important;
+    display: block;
+}
+/*是否隐藏相同项*/
+.isDisplaySame .el-form-item__label {
+    width: 78px !important;
+}
+.isDisplaySame .el-form-item__content{
+    margin-left: 78px!important;
+}
+.isDisplaySame input{
+    width: 28px;
+    height: 17px;
+}
+

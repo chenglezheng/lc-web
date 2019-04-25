@@ -1,0 +1,85 @@
+.sys-app,
+.sys-error-page,
+.sys-full-page{
+    background: $appBg;
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.sys-page{
+    width: 100%;
+    height: 100%;
+    padding:10px;
+    box-sizing: border-box;
+    padding-left: 24px;
+    padding-right: 24px;
+    overflow: hidden;
+}
+.sys-app{
+    overflow: hidden;
+}
+.sys-content{
+    position: absolute;
+    top: $headerHeight;
+    right: 0;
+    bottom: 0;
+    padding-top: 53px;
+    &.left{
+        left: $leftNavWidth;
+    }
+    &.top{
+        left: 0
+    }
+}
+/*修改滚动条的样式*/
+::-webkit-scrollbar {  /* 滚动条整体部分 */
+    width:10px;
+    margin-right:2px
+}
+::-webkit-scrollbar-button { /* 滚动条两端的按钮 */
+    width:10px;
+}
+::-webkit-scrollbar:horizontal {
+    height:10px;
+    margin-bottom:2px
+}
+::-webkit-scrollbar-track {  /* 外层轨道 */
+    border-radius: 15px;
+    border: 1px solid #53cce6;
+}
+::-webkit-scrollbar-track-piece {  /*内层轨道，滚动条中间部分 */
+    background-color:rgba(0,0,0,0);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {  /* 滑块 */
+    border-radius: 5px;
+    background: #53cce6;
+}
+::-webkit-scrollbar-corner { /* 边角 */
+    width: 10px;
+}
+::-webkit-scrollbar-thumb:hover { /* 鼠标移入滑块 */
+    background: #99e7f8;
+}
+/*控制显隐*/
+.displayNone{
+    display: none;
+}
+/*下拉公共样式*/
+.comboboxStyle input{
+    background-color: rgba(0,0,0,0)!important;
+    border-color: #d5f3ff!important;
+    color: $white!important;
+}
+/*ztree公共样式*/
+.ztree{
+    margin-top: 10px!important;
+}
+.ztree li a {
+    color: $white!important;
+    padding-top:3px!important;
+}
+.ztree li a:hover {
+    color: #ffdb33!important;
+}

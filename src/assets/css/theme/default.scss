@@ -1,0 +1,103 @@
+$themeColor: #52bab5 !default;
+$baseImageURL: '~sysStatic/images/default/' !default;
+
+/* 基础颜色
+-------------------------- */
+$white: #d5f3ff !default;
+$lighterGray: #eee !default;
+$lightGray: #ccc !default;
+$neutralGray: #aaa !default;
+$gray: #999 !default;
+$darkGray: #b1b1b1 !default;
+$darkerGray: #333 !default;
+$red: #d45b5b !default;
+
+$themeColorLighter: lighten($themeColor, 30%) !default;
+$themeColorDarken: darken($themeColor, 8%) !default;
+$themeGray: #f9f9f9 !default;
+
+$borderColor: #5cc1c0 !default;
+$pageColor: $white !default;
+$transparent: rgba(0,0,0,0) !default;
+$shadowColor: rgba($lightGray, .3) !default;
+
+
+/* 基本设置
+-------------------------- */
+$basicSpace: 10px !default;
+$basicMargin: $basicSpace !default;
+$basicPadding: $basicMargin !default;
+
+
+/* 字体设置
+-------------------------- */
+/* 设置1rem = 20px。需要与util/rem.js中的值相同 */
+$fontRem: 20px !default;
+/* 非响应式基本字号大小 */
+$fontSize: 14px !default;
+/* 响应式基本字号大小 16px = 1.3rem*/
+$fontResponseSize: 1.3rem !default;
+$fontFamily: "Helvetica", "Microsoft Yahei", san-serif !default;
+$fontColor: $darkerGray !default;
+$linkColor: $themeColor !default;
+
+
+/* 组件设置
+-------------------------- */
+$appBg: url($baseImageURL+"bg.png") no-repeat !default;
+$userInfoBg: url($baseImageURL+"userBg.png") center center no-repeat !default;
+$menuBg: url($baseImageURL+"menuBg.png") center center no-repeat !default;
+$menuBgHover:url($baseImageURL+"menuBgHover.png") center center no-repeat !default;
+$tagBg: url($baseImageURL+"tagBg.png") center center no-repeat !default;
+$tagBgClick: url($baseImageURL+"tagBgClick.png") center center no-repeat !default;
+$userIcon: url($baseImageURL+"userIcon.png") center center no-repeat !default;
+$treeBg: url($baseImageURL+"treeBg.png") center center no-repeat !default;
+$menuItemBg: url($baseImageURL+"menuItemBg.png") center center no-repeat !default;
+$userItemBg: url($baseImageURL+"userItemBg.png") center center no-repeat !default;
+$panelBg: url($baseImageURL+"panelBg.png") center center no-repeat !default;
+
+/* login */
+$loginBg: url($baseImageURL+"login/loginBg.png") center center no-repeat !default;
+$inputBg: url($baseImageURL+"login/loginInputBg.png") center center no-repeat !default;
+$userInput: url($baseImageURL+"login/userInput.png") center center no-repeat !default;
+$passInput: url($baseImageURL+"login/passInput.png") center center no-repeat !default;
+$loginBtn: url($baseImageURL+"login/loginBtn.png") center center no-repeat !default;
+$loginBtnHover: url($baseImageURL+"login/loginBtnHover.png") center center no-repeat !default;
+$useError: url($baseImageURL+"login/userError.png") center center no-repeat !default;
+$passError: url($baseImageURL+"login/passError.png") center center no-repeat !default;
+
+// $loginBtn: $themeColorDarken !default;
+$loginTextColor: darken($white, 12%) !default;
+$loginErrTextColor: #e5b989 !default;
+$loginInputBorderColor: none !default;
+// $loginInputBg: $lighterGray !default;
+$loginInputErrBg: #ffdede !default;
+$loginInputColor: $darkGray !default;
+// $loginLangCurBg: darken($loginBtn, 2%) !default;
+$loginLangCurColor: $lighterGray !default;
+
+/* header */
+$headerHeight: 60px !default;
+$headerBgColor: $themeColor !default;
+$headerBorderColor: none !default;
+$headerShadow: $transparent !default;
+$headerColor: white !default;
+$headerFontSize: 20px !default;
+
+/* nav */
+$leftNavBg: #f4f4f4 !default;
+$leftNavWidth: 160px !default;
+$leftNavColor: $fontColor !default;
+$leftNavBorder: 1px solid $lightGray !default;
+
+$topNavItemColor: $headerColor !default;
+$topNavItemHoverBg: darken($headerBgColor, 8%) !default;
+$topNavItemActiveBg: $themeColorLighter !default;
+
+$topSubNavBg: $white !default;
+$topSubNavItemColor: $themeColorDarken !default;
+$topSubNavItemHover: darken($topSubNavBg, 5%) !default;
+
+/* sysNotes */
+$notesBgColor: $lighterGray !default;
+$notesBorderColor: $themeColor !default;

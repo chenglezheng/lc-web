@@ -1,0 +1,129 @@
+/*树结构的全局修改*/
+.el-tree{
+    background-color: rgba(0,0,0,0);
+    font-size: 14px;
+    color: $white;
+    margin-top: 11px;
+}
+.el-tree-node:focus>.el-tree-node__content{
+    background-color: rgba(0,0,0,0);
+    color: #ffdb33;
+    background-size: 102% 100%;
+}
+.el-tree-node:hover>.el-tree-node__content{
+    background-color: rgba(0,0,0,0);
+    color: #ffdb33;
+    background-size: 100% 100%;
+}
+.el-tree-node > .el-tree-node__children {
+    overflow: visible;
+}
+/*表格*/
+.el-table thead{
+    color: #021f32!important;
+}
+.el-table{
+    background-color: rgba(0,0,0,0);
+}
+.el-table th{
+    background-color: #aee0ee!important;
+}
+.el-table__row{
+    background-color: rgba(0,0,0,0)!important;
+    color: #d5f3ff!important;
+}
+.el-table__row--striped{
+    background-color: #506e8b!important;
+    color: #d5f3ff!important;
+}
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+    background-color: rgba(0,0,0,0)!important;
+}
+.el-table th.is-leaf, .el-table td{
+    border: 0px!important;
+}
+.el-table--group::after, .el-table--border::after, .el-table::before{
+    background-color: rgba(0,0,0,0)!important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover>td{
+    background-color: #7795b3 !important;
+}
+
+/*分页*/
+.el-pagination__total{
+    color: #58c3f0;
+}
+.el-pagination__jump{
+    color: #58c3f0;
+}
+.el-pager li{
+    background-color: rgba(0,0,0,0)!important;
+    color: $white;
+}
+.el-pagination .btn-prev, .el-pagination .btn-next{
+    background-color: #58c3f0!important;
+    border-radius: 4px;
+}
+.el-pagination .btn-prev{
+    height: 21px;
+    margin-top: 4px;
+}
+.el-pagination .btn-next{
+    height: 21px;
+    margin-top: 4px;
+}
+/*日历*/
+.el-date-picker,.el-date-range-picker{
+    background-color: #aee0ee;
+    border: none;
+    .el-picker-panel__sidebar{
+        background-color: #aee0ee;
+    }
+     .popper__arrow::after{
+        border-bottom-color:#aee0ee !important;
+    }
+    .el-date-table td.disabled div{
+        background:none;
+    }
+    .el-date-table th{
+        border-bottom: solid 1px #b7f4ff;
+    }
+    .el-picker-panel__sidebar{
+        border-right: 1px solid #b7f4ff;
+    }
+}
+
+/*下拉框*/
+.el-select-dropdown{
+    background: $menuItemBg;
+    background-size: 100% 110%;
+    border: none;
+    .popper__arrow::after{
+        border-top-color:#2994be !important;
+        border-bottom-color:#2994be !important;
+    }
+    .el-select-dropdown__item{
+        color: white;
+        background: transparent;
+    }
+}
+
+.el-popper[x-placement^="top"] .popper__arrow{
+    border: none;
+}
+.el-popper[x-placement^="bottom"] .popper__arrow{
+    border: none;
+}
+
+.el-select-dropdown__list{
+    .el-select-dropdown__item{
+        text-align: center;
+    }
+    .el-select-dropdown__item:hover{
+        color: #ffdb33;
+        text-align: center;
+    }
+
+}
+
