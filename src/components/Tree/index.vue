@@ -16,7 +16,7 @@ export default {
             },
             async:{
                 enable:true,
-                url:"http://127.0.0.1:8888/tmr_imap/getMidModelNoFilterAcquiredsNoRoleSubstationTree",
+                url:"/getMidModelNoFilterAcquiredsNoRoleSubstationTree",
                 autoParam:["id","noteType"],
             },
             expandSpeed:"show",

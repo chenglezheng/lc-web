@@ -62,7 +62,7 @@ const actions = {
             // 根据Token进行重新登录
             let userName = Cookies.get('userName')
             axios({
-                url: 'http://127.0.0.1:8888/tmr_imap/user/getRequest',
+                url: '/user/getRequest',
                 methods: 'get',
                 data: {}
             }).then((res) => {
@@ -116,7 +116,7 @@ const actions = {
     getTree({commit}){
         return new Promise((resolve) =>{
             axios({
-                url: 'http://127.0.0.1:8888/tmr_imap/getNoRoleRootTree',
+                url: '/getNoRoleRootTree',
                 methods: 'post',
                 data: {}
             }).then((res) => {
